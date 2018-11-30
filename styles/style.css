@@ -1,6 +1,7 @@
 *{
   padding: 0;
   margin: 0;
+
 }
 .border_line{
   position: absolute;
@@ -229,9 +230,6 @@ header .head .main-menu li a:hover{
   justify-content: space-between;
   width: 1170px;
   margin: auto;
-}
-.deffult_section .container-def .left_column{
-
 }
 .deffult_section .container-def .left_column h2{
   position: relative;
