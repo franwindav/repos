@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-.border_line{
+.border-line{
   position: absolute;
   top: 40px;
   left: 2px;
@@ -37,14 +37,14 @@ header .head .logo{
 header .head .logo span{
   color: #4bcaff;
 }
-header .head .main-menu{
+.main-menu{
   list-style: none;
 }
 
-header .head .main-menu li{
+.main-menu li{
   display: inline-block;
 }
-header .head .main-menu li a{
+.main-menu li a{
   display: inline-block;
   margin-left: 0.7%;
   padding: 13px 20px;
@@ -55,10 +55,15 @@ header .head .main-menu li a{
   line-height: 10px;
   color: white;
 }
-header .head .main-menu li a:hover{
+.main-menu li a:hover{
     padding: 11px 18px;
     border: 2px solid #4bcaff;
     color: #4bcaff;
+}
+#services, #portfolio, #contact, #features{
+  border-top: 150px solid transparent;
+  margin-top: -150px;
+  background-clip: padding-box;
 }
 .greeting{
 	display: flex;
@@ -66,7 +71,7 @@ header .head .main-menu li a:hover{
 	align-items: center;
   width: 100%;
   height: 800px;
-  background-image: url(../src/header_bg.png);
+  background-image: url(../src/header-bg.png);
   color: white;
   font-weight: 100;
 }
@@ -96,7 +101,7 @@ header .head .main-menu li a:hover{
   margin: auto;
   padding-top: 80px;
 }
-.services .container .logo-services{
+.logo-services{
   position: relative;
   margin-bottom: 39px;
   font-size: 30px;
@@ -104,45 +109,45 @@ header .head .main-menu li a:hover{
   font-weight: 100;
   color: white;
 }
-.services .container .logo-services .border_line{
+.logo-services .border-line{
   background-color: white;
 }
-.services .container .services-elements{
+.services-elements{
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.services .container .services-elements li{
+.services-elements li{
   width: 270px;
   height: 175px;
 }
-.services .container .services-elements .coffe .img-coffe{
+.services-elements .coffe .img-coffe{
   width: 48px;
   height: 48px;
   background: url(../src/img-coffe.png) no-repeat 0 0;
 }
-.services .container .services-elements .instant .img-instant{
+.services-elements .instant .img-instant{
   width: 48px;
   height: 48px;
   background: url(../src/img-instant.png) no-repeat 0 0;
 }
-.services .container .services-elements .serious .img-serious{
+.services-elements .serious .img-serious{
   width: 48px;
   height: 48px;
   background: url(../src/img-serious.png) no-repeat 0 0;
 }
-.services .container .services-elements .frame .img-frame{
+.services-elements .frame .img-frame{
   width: 48px;
   height: 48px;
   background: url(../src/img-frame.png) no-repeat 0 0;
 }
-.services .container .services-elements li h2{
+.services-elements li h2{
   font-size: 24px;
   font-family: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: bold;
   color: white;
 }
-.services .container .services-elements li p{
+.services-elements li p{
   font-size: 12px;
   line-height: 18px;
   font-family: "Segoe UI Semibold", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -169,17 +174,17 @@ header .head .main-menu li a:hover{
   font-weight: 100;
   color: #515f67;
 }
-.portfolio .head .logo .border_line{
+.portfolio .head .logo .border-line{
   background-color: #515f67;
 }
-.portfolio .head .photo-filter{
+.photo-filter{
   list-style: none;
 }
-.portfolio .head .photo-filter li{
+.photo-filter li{
   display: inline-block;
   text-decoration: none;
 }
-.portfolio .head .photo-filter li button{
+.photo-filter li button{
   margin-left: 50px;
   border-radius: 0;
   border: none;
@@ -189,37 +194,41 @@ header .head .main-menu li a:hover{
   font-weight: bold;
   color: #515f67;
 }
-.portfolio .head .photo-filter li:first-child button{
+.photo-filter li:first-child button{
   margin-left: 0;
 }
-.portfolio .head .photo-filter li button:focus{
+.photo-filter li button:focus{
   border: none;
   outline: none;
 }
-.portfolio .head .photo-filter .active button{
+.photo-filter .active button{
   border: 2px solid #4bcaff;
   color: #4bcaff;
   padding: 8px 15px;
 }
-.portfolio .photos{
+.photo-filter .active button:focus{
+  border: 2px solid #4bcaff;
+  color: #4bcaff;
+}
+.photos{
   width: 1170px;
   margin: auto;
   margin-top: 80px;
   list-style: none;
 }
-.portfolio .photos .line_1{
+.photos .first-line{
   margin-bottom: 30px;
 }
-.portfolio .photos .line_1,
-.portfolio .photos .line_2{
+.photos .first-line,
+.photos .second-line{
   display: flex;
   justify-content: space-between;
 }
-.portfolio .photos .line_1 li,
-.portfolio .photos .line_2 li{
+.photos .first-line li,
+.photos .second-line li{
   display: inline-block;
 }
-.deffult_section{
+.default-section{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,13 +236,13 @@ header .head .main-menu li a:hover{
   height: 473px;
   background-color: #515f67;
 }
-.deffult_section .container-def{
+.default-section .container{
   display: flex;
   justify-content: space-between;
   width: 1170px;
   margin: auto;
 }
-.deffult_section .container-def .left_column h2{
+.default-section .container .left-column h2{
   position: relative;
   margin-bottom: 42px;
   font-size: 30px;
@@ -241,18 +250,18 @@ header .head .main-menu li a:hover{
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   color: white;
 }
-.deffult_section .container-def .left_column h2 .border_line{
+.default-section .container .left-column h2 .border-line{
   left: 0;
   background-color: white;
 }
-.deffult_section .container-def .left_column p{
+.default-section .container .left-column p{
   font-size: 14px;
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: white;
   margin-bottom: 12px;
 }
-.deffult_section .container-def .left_column a{
+.default-section .container .left-column a{
   display: block;
   width: 59px;
   padding: 16px 39px 15px 38px;
@@ -263,7 +272,10 @@ header .head .main-menu li a:hover{
   color: #353f46;
   text-decoration: none;
 }
-
+.default-section .container .left-column a:hover{
+  border-color: #4bcaff;
+  color: #4bcaff;
+}
 .twitter{
   display: flex;
   justify-content: center;
@@ -287,7 +299,7 @@ header .head .main-menu li a:hover{
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   color: white;
 }
-.twitter .container .head h2 .border_line{
+.twitter .container .head h2 .border-line{
   background-color: white;
 }
 .twitter .container .head .logo{
@@ -307,27 +319,26 @@ header .head .main-menu li a:hover{
 .twitter .container p b{
   font-family: Myriad Pro;
 }
-.who_is{
-  box-sizing: border-box;
-  padding-top: 95px;
+.who-is{
   width: 100%;
   height: 505px;
-  background: url(../src/bg_who_is.png) no-repeat 0 0;
+  background: url(../src/bg-who-is.png) no-repeat 0 0;
 }
-.who_is h2{
+.who-is h2{
   position: relative;
   display: block;
   width: 1170px;
   margin: auto;
+  margin-top: 95px;
   font-size: 30px;
   font-weight: 100;
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   color: white;
 }
-.who_is h2 .border_line{
+.who-is h2 .border-line{
   background-color: white;
 }
-.who_is .container{
+.who-is .container{
   display: flex;
   justify-content: space-between;
   width: 1170px;
@@ -335,44 +346,44 @@ header .head .main-menu li a:hover{
   margin-top: 40px;
   color: white;
 }
-.who_is .container p{
+.who-is .container p{
   font-size: 14px;
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: normal;
   color: white;
 }
-.who_is .container .left_column p:first-child{
+.who-is .container .left-column p:first-child{
   margin-bottom: 33px;
 }
-.who_is .container .right_column{
+.who-is .container .right-column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 161px;
 }
-.who_is .container .right_column ul{
+.who-is .container .right-column ul{
   list-style: none;
 }
-.who_is .container .right_column ul li{
+.who-is .container .right-column ul li{
   display: inline-block;
 }
-.who_is .container .right_column ul li a{
+.who-is .container .right-column ul li a{
   display: inline-block;
   width: 60px;
   height: 60px;
   border: 2px solid white;
 }
-.who_is .container .right_column ul .twitter_soc a{
+.who-is .container .right-column ul .twitter-soc a{
   background: url(../src/icon-twitter.png) no-repeat 16px 19px;
 }
-.who_is .container .right_column ul .google_plus a{
-  background: url(../src/icon_google_plus.png) no-repeat 16px 19px;
+.who-is .container .right-column ul .google-plus a{
+  background: url(../src/icon-google-plus.png) no-repeat 16px 19px;
 }
-.who_is .container .right_column ul .dribbble a{
-  background: url(../src/icon_dribbble.png) no-repeat 16px 19px;
+.who-is .container .right-column ul .dribbble a{
+  background: url(../src/icon-dribbble.png) no-repeat 16px 19px;
 }
-.who_is .container .right_column ul .coffee a{
-  background: url(../src/icon_coffee.png) no-repeat 16px 19px;
+.who-is .container .right-column ul .coffee a{
+  background: url(../src/icon-coffee.png) no-repeat 16px 19px;
 }
 .testimonials{
   display: flex;
@@ -393,7 +404,7 @@ header .head .main-menu li a:hover{
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   color: black;
 }
-.testimonials .container h2 .border_line{
+.testimonials .container h2 .border-line{
   background-color: black;
 }
 .testimonials .container p:first-of-type{
@@ -423,7 +434,8 @@ header .head .main-menu li a:hover{
   justify-content: center;
   align-items: center;
   height: 814px;
-  background: url(../src/bg_contact.png) no-repeat 0 0;
+  width: 100%;
+  background: url(../src/bg-contact.png) no-repeat 0 0;
 }
 .contact .container{
   width: 1170px;
@@ -435,7 +447,7 @@ header .head .main-menu li a:hover{
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   color: white;
 }
-.contact .container .border_line{
+.contact .container .border-line{
   background-color: white;
 }
 .contact .container h3 {
@@ -452,7 +464,7 @@ header .head .main-menu li a:hover{
   font-family: Myriad Pro;
   color: white;
 }
-.contact .container .full_name input{
+.contact .container .full-name input{
   width: 466px;
   height: 56px;
   border: 2px solid white;
@@ -477,10 +489,10 @@ header .head .main-menu li a:hover{
   margin-top: 35px;
   margin-bottom: 25px;
 }
-.contact .container .right_column p:first-child{
+.contact .container .right-column p:first-child{
   margin-bottom: 30px;
 }
-.contact .container .full_name{
+.contact .container .full-name{
   display: block;
   margin-bottom: 35px;
 }
