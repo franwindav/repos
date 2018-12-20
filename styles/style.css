@@ -54,6 +54,9 @@ header .head .logo span{
   font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   line-height: 10px;
   color: white;
+  transition:
+    border-color 400ms ease-in-out,
+    color 800ms ease-in-out;
 }
 .main-menu li a:hover{
     padding: 11px 18px;
@@ -121,10 +124,10 @@ header .head .logo span{
   width: 270px;
   height: 175px;
 }
-.services-elements .coffe .img-coffe{
+.services-elements .coffee .img-coffee{
   width: 48px;
   height: 48px;
-  background: url(../src/img-coffe.png) no-repeat 0 0;
+  background: url(../src/img-coffee.png) no-repeat 0 0;
 }
 .services-elements .instant .img-instant{
   width: 48px;
@@ -197,7 +200,7 @@ header .head .logo span{
 .photo-filter li:first-child button{
   margin-left: 0;
 }
-.photo-filter li button:focus{
+.photo-filter li button{
   border: none;
   outline: none;
 }
@@ -227,6 +230,44 @@ header .head .logo span{
 .photos .first-line li,
 .photos .second-line li{
   display: inline-block;
+}
+.photos .first-line button,
+.photos .second-line button{
+  position: relative;
+  border:none;
+  background: none;
+  font-size: 0;
+  outline: none;
+}
+.photos .hover,
+.photos .hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 270px;
+  height: 270px;
+  background-color: rgb(53, 63, 71);
+  opacity: 0;
+  transition: opacity 800ms ease-in-out;
+}
+.photos button:hover .hover,
+.photos button:hover .hover{
+  opacity: 0.9;
+}
+.photos .hover::after,
+.photos .hover::after{
+  content: "";
+  display: block;
+  margin: 118.5px 119px;
+  width: 32px;
+  height: 33px;
+  background: url(../src/photo-hover-plus.png) no-repeat 0 0;
+  transition: transform 800ms ease-in-out;
+}
+.photos button:hover .hover::after,
+.photos button:hover .hover::after{
+  transform: rotate(180deg);
 }
 .default-section{
   display: flex;
@@ -271,6 +312,9 @@ header .head .logo span{
   font-weight: bold;
   color: #353f46;
   text-decoration: none;
+  transition:
+    border-color 800ms ease-in-out,
+    color 800ms ease-in-out;
 }
 .default-section .container .left-column a:hover{
   border-color: #4bcaff;
