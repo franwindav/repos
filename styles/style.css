@@ -249,7 +249,7 @@ header .head .logo span{
   height: 270px;
   background-color: rgb(53, 63, 71);
   opacity: 0;
-  transition: opacity 800ms ease-in-out;
+  transition: opacity 800ms ease-in-out 200ms;
 }
 .photos button:hover .hover,
 .photos button:hover .hover{
@@ -313,8 +313,8 @@ header .head .logo span{
   color: #353f46;
   text-decoration: none;
   transition:
-    border-color 800ms ease-in-out,
-    color 800ms ease-in-out;
+    border-color 700ms ease-in-out 100ms,
+    color 700ms ease-in-out 100ms;
 }
 .default-section .container .left-column a:hover{
   border-color: #4bcaff;
@@ -580,6 +580,8 @@ footer{
   background-color: #353f47;
 }
 footer .container{
+  display: flex;
+  justify-content: space-between;
   font-size: 0;
   width: 1170px;
 }
@@ -601,4 +603,13 @@ footer .container ul li a{
 }
 footer .container ul li:last-child a{
   border: none;
+}
+footer .container a{
+  display: inline-block;
+  color: #4a575f;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 12px;
+  font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100;
 }
