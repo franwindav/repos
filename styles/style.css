@@ -63,6 +63,11 @@ header .head .logo span{
     border: 2px solid #4bcaff;
     color: #4bcaff;
 }
+.main-menu li .active{
+  padding: 11px 18px;
+  border: 2px solid #4bcaff;
+  color: #4bcaff;
+}
 #services, #portfolio, #contact, #features{
   border-top: 150px solid transparent;
   margin-top: -150px;
